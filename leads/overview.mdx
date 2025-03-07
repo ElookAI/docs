@@ -1,0 +1,135 @@
+
+## name: "Elook DB Lead Search Page Documentation" description: "A detailed guide on using the Lead Search page in Elook DB."
+
+
+# Elook DB Lead Search Page
+
+The **Elook DB Lead Search Page** allows users to filter, explore, and extract lead information efficiently. This guide provides a structured overview of its features, functionalities, and best practices for maximizing its use.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [UI Elements](#ui-elements)
+- [Search and Filtering](#search-and-filtering)
+- [Lead List Table](#lead-list-table)
+- [Actions and Interactions](#actions-and-interactions)
+- [Best Practices](#best-practices)
+- [Troubleshooting](#troubleshooting)
+
+## Overview
+
+The Lead Search page is designed to help users find business leads based on various filters such as **job title, industry, location, and company size**. Users can retrieve contact details upon request.
+
+## UI Elements
+
+### Sidebar Navigation
+
+The left sidebar includes:
+
+- **Dashboard**: Overview of Elook DB usage.
+- **Elook DB**: Access to the main lead search page.
+- **Google Scraper**: Extracting lead data from Google.
+- **Chats**: Communication tool.
+- **Contacts**: Saved leads.
+- **Campaigns**: Lead engagement tracking.
+- **Message Templates**: Predefined outreach templates.
+- **Automation**: Workflow automation.
+- **Team**: Manage team members.
+- **Settings**: Customize account settings.
+- **Billing & Subscription**: Payment and plan details.
+- **Support**: Customer assistance.
+- **Developer Tools**: API and integration options.
+
+### Search Filters Panel
+
+Users can refine searches using the following filters:
+
+- **Name**: Search by a specific person's name.
+- **Industry**: Filter by business sector.
+- **Skills**: Identify leads with specific skills.
+- **Gender**: Filter by male, female, or other options.
+- **Job Titles**: Narrow down by job role (e.g., `Manager`).
+- **Location**: Find leads in a particular region.
+- **Languages**: Filter leads based on language proficiency.
+- **Company**: Search by company name.
+
+## Search and Filtering
+
+Users can apply multiple filters simultaneously. Each selected filter appears with an `X` button, allowing quick removal. The `Clear All` option resets the search criteria.
+
+**Example Usage:**
+
+```jsx
+<SearchBar placeholder="Search leads..." />
+<Filter label="Job Titles" value="Manager" onRemove={handleRemove} />
+```
+
+## Lead List Table
+
+The results table includes:
+
+- **User**: Profile initials and full name.
+- **Department**: Lead's business department.
+- **Location**: City, state, and country.
+- **Employees**: Company size (1-10, 1000+, etc.).
+- **Role**: Lead's role in the company.
+- **Keywords**: Related tags (e.g., `Insurance`, `Finance`).
+- **Company Founded**: Year of establishment.
+- **Details**: Button to retrieve email and phone.
+
+## Actions and Interactions
+
+Users can:
+
+- **Select leads** for bulk actions.
+- **Sort columns** by clicking on headers.
+- **Click “Get Email And Phone”** to fetch contact details.
+- **Save leads** to contacts.
+
+**Example of Data Row:**
+
+```jsx
+<TableRow>
+  <TableCell>User</TableCell>
+  <TableCell>Department</TableCell>
+  <TableCell>Location</TableCell>
+  <TableCell>Employees</TableCell>
+  <TableCell>Role</TableCell>
+  <TableCell>Keywords</TableCell>
+  <TableCell>Company Founded</TableCell>
+  <TableCell>
+    <Button onClick={handleGetContact}>Get Email And Phone</Button>
+  </TableCell>
+</TableRow>
+```
+
+## Best Practices
+
+- Use **multiple filters** to refine searches effectively.
+- Save frequently searched criteria for quick access.
+- Export lead data for CRM integration.
+- Check lead details before outreach.
+
+## Troubleshooting
+
+**Issue:** No leads appearing in search results.
+
+**Solution:**
+
+- Ensure correct filter combinations.
+- Expand location or job title variations.
+
+**Issue:** Unable to retrieve email or phone.
+
+**Solution:**
+
+- Contact support if repeated failures occur.
+
+## Conclusion
+
+The **Elook DB Lead Search Page** is a powerful tool for lead generation and business intelligence. By utilizing the filters and lead details effectively, users can enhance their prospecting and outreach efforts.
+
+---
+
+For more assistance, visit our [Support Page](#support).
+
