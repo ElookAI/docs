@@ -18,12 +18,12 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:info@elook.ai"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://app.elook.ai"
   },
   "tabs": [
     {
@@ -33,19 +33,19 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
+      "name": "Elook App",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "https://app.elook.ai"
     },
     {
       "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "icon": "Discord",
+      "url": "https://discord.gg/N5dzv5sp"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "http://elook.ai/blog"
     }
   ],
   "navigation": [
@@ -53,12 +53,35 @@
       "group": "Get Started",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        "quickstart"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Leads",
+      "pages": [
+      "leads/overview"
+      ]
+    },
+    {
+      "group": "Contacts",
+      "pages": [
+      "contacts/overview"
+      ]
+    },
+    {
+      "group": "Campaigns",
+      "pages": [
+"campaigns/overview"
+      ]
+    },
+    {
+      "group": "Chats",
+      "pages": [
+"chats/overview"
+      ]
+    },
+    {
+      "group": "Integrations",
       "pages": [
         "essentials/markdown",
         "essentials/code",
@@ -69,9 +92,12 @@
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Get Started",
       "pages": [
-        "api-reference/introduction"
+        "api-reference/introduction",
+        "api-reference/api-overview",
+        "api-reference/create-api-keys"
+
       ]
     },
     {
